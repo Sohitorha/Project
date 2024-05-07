@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футбольний клуб "Мрія"</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <img src="https://st3.depositphotos.com/7325936/12847/v/450/depositphotos_128478360-stock-illustration-soccer-club-logo-on-white.jpg" alt="Футбольний клуб" style="max-width: 100px;">
+        <h1>Ласкаво просимо до Футбольного клубу "Мрія"</h1>
+    </header>
+    <main>
+        <div class="team-history">
+            <h2>Команда</h2>
+            <p>Історія нашого клубу сягає 2001 року, коли було засновано команду з метою спільного просування у світі футболу та виховання молодого покоління. Протягом років ми зарекомендували себе як сильний колектив, що неодноразово досягав високих результатів в різних змаганнях.</p>
+        </div>
+        <div class="team-achievements">
+            <h2>Досягнення команди</h2>
+            <ul>
+                <li>Чемпіонат країни: 2003, 2004, 2010</li>
+                <li>Кубок країни: 2007, 2008</li>
+                <li>Успішні участі в міжнародних турнірах: 2007, 2012</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-toggle-label">Меню</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="site.html">Головна</a></li>
+                <li><a href="price.html">Послуги</a></li>
+                <li><a href="gallery.html">Фотогалерея</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Футбольний клуб "Мрія". Усі права захищені.</p>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('.menu');
+        menu.style.display = 'none';
+        menuToggle.addEventListener('change', function() {
+            if (this.checked) {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

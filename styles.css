@@ -1,0 +1,169 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; 
+        }
+
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        
+        main {
+            padding: 20px;
+            text-align: center; 
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            bottom: 0; 
+            width: 100%; 
+        }
+
+       
+        footer nav {
+            background-color: #333;
+            padding: 10px 0; 
+        }
+
+        footer nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        
+        .team-history {
+            margin-top: 20px;
+            text-align: left;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-history h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .team-history p {
+            color: #666;
+        }
+
+        
+        .team-achievements {
+            margin-top: 20px;
+            text-align: left;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-achievements h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .team-achievements ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .team-achievements li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc; 
+            padding-bottom: 10px; 
+        }
+
+      
+        .menu-toggle {
+            display: none; 
+
+        .menu-toggle-label {
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .menu-toggle-label:hover {
+            background-color: #555;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .menu-toggle:checked + .menu {
+            display: block;
+        }
+
+       
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            .team-history,
+            .team-achievements {
+                padding: 10px;
+            }
+            footer nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .menu-toggle-label {
+                display: block;
+            }
+            .menu {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+            h1 {
+                font-size: 20px;
+            }
+            .team-history,
+            .team-achievements {
+                padding: 5px;
+            }
+        }{
+    display: flex;
+    justify-content: center;
+}
